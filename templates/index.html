@@ -1,0 +1,10 @@
+<form method="post">
+    Long URL: <input type="text" name="long_url">
+    <input type="submit">
+</form>
+<h5>Number of URLS: {{ numUrl }}</h5>
+{% if urlDictionary %}
+    {% for key, value in urlDictionary.items() %}
+        <li>{{ key }}</li>
+    {% endfor %}
+{% endif %}
