@@ -1,8 +1,11 @@
+<!-- This is form to submit a short URL -->
 <form method="post">
     Long URL: <input type="text" name="long_url">
     <input type="submit">
 </form>
+<!-- This shows the number of URLS -->
 <h5>Number of URLS: {{ numUrl }}</h5>
+<!-- This shows the list of URL -->
 {% if urlDictionary %}
     {% for key, value in urlDictionary.items() %}
         <li>{{ key }}</li>

@@ -5,6 +5,7 @@ import random
 
 app = Flask(__name__)
 
+# This is the hashmap to store the URL
 urlDictionary = {}
 
 
